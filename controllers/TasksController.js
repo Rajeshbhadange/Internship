@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Tasks_Model = require("../model/TasksModel");
 
-const addTasks = async (req, res) => {
+const AddTasks = async (req, res) => {
   try {
     const {
       ID,
@@ -149,7 +149,7 @@ const CountTasks = async (req, res) => {
 
 // Export the controllers
 module.exports = {
-  addTasks,
+  AddTasks,
   getAllListTasks,
   GetTasksById,
   CountTasks,
